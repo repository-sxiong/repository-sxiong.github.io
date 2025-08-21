@@ -1,0 +1,23 @@
+<!-- _layouts/publication.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+  <p><strong>Authors:</strong> {{ page.authors }}</p>
+  <p><strong>Published in:</strong> {{ page.venue }}, {{ page.year }}</p>
+  <p><strong>Abstract:</strong> {{ page.abstract }}</p>
+  {% if page.pdf %}
+    <a href="{{ page.pdf }}">[PDF]</a>
+  {% endif %}
+  {% if page.doi %}
+    <a href="{{ page.doi }}">[DOI]</a>
+  {% endif %}
+  <div>
+    {{ content }}
+  </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+name: academic_env
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - nodejs
+  - ruby
+  - c-compiler
+  - compilers
+  - cxx-compiler
+prefix: /home/blue/miniconda3/envs/academic_env
